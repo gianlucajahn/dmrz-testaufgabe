@@ -1,0 +1,12 @@
+.switch {
+    border: 1px solid #007aff;
+    padding: 6px 10px;
+    color: #007aff;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+}

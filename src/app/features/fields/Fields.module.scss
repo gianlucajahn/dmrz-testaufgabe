@@ -1,0 +1,101 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+
+  label {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #2c2c2c;
+  }
+
+  input,
+  select {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    color: #2c2c2c;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+
+    &::placeholder {
+      color: #919191;
+      opacity: 1;
+    }
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  &.invalid input {
+    border-color: red;
+  }
+}
+
+.warningIcon {
+  position: absolute;
+  right: 0.5rem;
+  color: red;
+}
+
+.errorText {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.dateWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 100%;
+    padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  .calendarIcon {
+    position: absolute;
+    right: 0.75rem;
+    width: 1rem;
+    height: 1rem;
+    color: #666;
+    pointer-events: none;
+  }
+}
+
+.dateInputField {
+  height: 36px;
+  letter-spacing: -0.07rem;
+}
+
+.invalid {
+  border-color: red !important;
+}
+
+.errorText {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}

@@ -1,0 +1,34 @@
+.fieldGroup {
+  background-color: #f8f8f8;
+  margin-top: 28px;
+  width: 572px;
+  position: relative;
+
+  @media screen and (max-width: 652px) {
+    width: 87.5vw;
+  }
+
+  .groupHead {
+    background-color: #f2f2f2;
+    padding: 16px 24px;
+  }
+
+  .fieldGrid {
+    margin-top: 12px;
+    display: grid;
+    padding: 12px 42px 16px 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+
+    @media screen and (max-width: 460px) {
+            grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .fieldList {
+    display: grid;
+    padding: 20px 24px 64px 24px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem 2rem;
+  }
+}

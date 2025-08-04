@@ -1,0 +1,16 @@
+.layout {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    padding-top: 100px;
+
+    @media screen and (max-width: 868px) {
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    @media screen and (max-width: 764px) {
+        padding: 5%;
+    }
+}

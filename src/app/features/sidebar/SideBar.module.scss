@@ -1,0 +1,28 @@
+.sidebar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    background-color: #f1f2f4;
+    height: 80vh;
+    justify-content: space-between;
+
+    @media screen and (max-width: 460px) {
+        height: auto;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 84px 16px 16px;
+    }
+
+    .bottom {
+        cursor: pointer;
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #353a40;
+    }
+}

@@ -1,0 +1,21 @@
+.maskSelector {
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  padding: 10px 0 10px 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.isSelected {
+  background-color: #007aff;
+  border: 1px solid #007aff;
+}
+
+.isLast {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.isDisabled {
+    cursor: not-allowed !important;
+}

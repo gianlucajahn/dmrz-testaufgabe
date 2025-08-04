@@ -1,0 +1,82 @@
+.maskWrapper {
+    padding-bottom: 100px;
+    width: 570px;
+
+    @media screen and (max-width: 652px) {
+        width: 87.5vw;
+    }
+}
+
+.fullWidth {
+      grid-column: span 2;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.alert {
+    background-color: #d1ebfa;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: -18px;
+
+    @media screen and (max-width: 460px) {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    p {
+        color: black;
+        font-size: 12px;
+        max-width: 55%;
+
+        @media screen and (max-width: 460px) {
+            max-width: 100%;
+        }
+    }
+
+    .collect {
+        background-color: #0479fc;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+}
+
+.check {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.list {
+    display: block;
+
+    h5 {
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .listData {
+        margin-top: 4px;
+        margin-bottom: 2px;
+        margin-left: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.switchMask {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
