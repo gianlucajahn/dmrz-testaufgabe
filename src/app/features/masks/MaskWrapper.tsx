@@ -6,9 +6,7 @@ import PatientMask from "./PatientMask";
 import TherapyMask from "./TherapyMask";
 import ReviewMask from "./ReviewMask";
 
-export interface IMaskWrapperProps {}
-
-export default function MaskWrapper(props: IMaskWrapperProps) {
+export default function MaskWrapper() {
   const { currentMask } = useFormData();
   let renderedMask;
 

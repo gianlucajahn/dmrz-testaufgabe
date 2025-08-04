@@ -4,16 +4,14 @@ import * as React from "react";
 import css from "./Mask.module.scss";
 import Headline from "../headline/Headline";
 import FieldGroup from "../fieldgroup/FieldGroup";
-import { PersonalInfo, useFormData } from "@/app/context/FormDataContext";
+import { Gender, PersonalInfo, Title, useFormData } from "@/app/context/FormDataContext";
 import Dropdown from "../fields/dropdown/Dropdown";
 import Input from "../fields/input/Input";
 import DateInput from "../fields/date/Date";
 import BackButton from "../buttons/back/BackButton";
 import SaveButton from "../buttons/save/SaveButton";
 
-export interface IPatientMaskProps {}
-
-export default function PatientMask(props: IPatientMaskProps) {
+export default function PatientMask() {
   const { data, updateSection, setCurrentMask } = useFormData();
 
   const [form, setForm] = React.useState<PersonalInfo>({
@@ -88,7 +86,7 @@ export default function PatientMask(props: IPatientMaskProps) {
           placeholder="ㅤ"
           value={form.gender}
           options={["Herr", "Frau", "Divers"]}
-          onChange={(e) => handleChange("gender", e.target.value)}
+          onChange={(e) => handleChange("gender", e.target.value as Gender)}
         />
         <Dropdown
           id="title"
@@ -96,7 +94,7 @@ export default function PatientMask(props: IPatientMaskProps) {
           placeholder="ㅤ"
           value={form.title}
           options={["Dr.", "Prof.", "Prof. Dr."]}
-          onChange={(e) => handleChange("title", e.target.value)}
+          onChange={(e) => handleChange("title", e.target.value as Title)}
         />
         <Input
           id="name"

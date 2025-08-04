@@ -4,7 +4,7 @@ import * as React from "react";
 import css from "./Mask.module.scss";
 import Headline from "../headline/Headline";
 import FieldGroup from "../fieldgroup/FieldGroup";
-import { useFormData } from "@/app/context/FormDataContext";
+import { TherapyFrequency, useFormData, YesNo } from "@/app/context/FormDataContext";
 import BackButton from "../buttons/back/BackButton";
 import SaveButton from "../buttons/save/SaveButton";
 import Checkbox from "../fields/checkbox/Checkbox";
@@ -92,7 +92,7 @@ export default function TherapyMask() {
           id="therapyFrequency"
           label="Therapiefrequenz"
           value={form.therapyFrequency}
-          onChange={(e) => handleChange("therapyFrequency", e.target.value)}
+          onChange={(e) => handleChange("therapyFrequency", e.target.value as TherapyFrequency)}
           options={["1-3x wöchentlich", "alle 4-6 Wochen"]}
           placeholder="Therapiefrequenz festlegen"
           required
@@ -104,7 +104,7 @@ export default function TherapyMask() {
           name="homeVisit"
           label="Hausbesuch"
           value={form.homeVisit}
-          onChange={(value) => handleChange("homeVisit", value)}
+          onChange={(value) => handleChange("homeVisit", value as YesNo)}
           options={[
             { value: "no", label: "Nein" },
             { value: "yes", label: "Ja" },

@@ -7,9 +7,7 @@ import TextElement from "../text/TextElement";
 import { useFormData } from "@/app/context/FormDataContext";
 import SwitchButton from "../buttons/switch/SwitchButton";
 
-export interface IReviewMaskProps {}
-
-export default function ReviewMask(props: IReviewMaskProps) {
+export default function ReviewMask() {
   const { data } = useFormData();
 
   return (

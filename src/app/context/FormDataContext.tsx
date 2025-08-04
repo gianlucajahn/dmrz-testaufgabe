@@ -14,10 +14,10 @@ export type Mask =
   | "Datenüberprüfung"
   | "Leistungen"
   | "";
-type Gender = "Männlich" | "Weiblich" | "Divers" | "Keine Angabe" | "";
-type Title = "Dr." | "Prof." | "";
-type YesNo = "yes" | "no" | "";
-type TherapyFrequency = "1-3x wöchentlich" | "alle 4-6 Wochen" | "";
+export type Gender = "Männlich" | "Weiblich" | "Divers" | "Keine Angabe" | "";
+export type Title = "Dr." | "Prof." | "";
+export type YesNo = "yes" | "no" | "";
+export type TherapyFrequency = "1-3x wöchentlich" | "alle 4-6 Wochen" | "";
 
 export interface PersonalInfo {
   gender: Gender;

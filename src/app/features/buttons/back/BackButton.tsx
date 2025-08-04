@@ -4,10 +4,7 @@ import * as React from 'react';
 import css from './BackButton.module.scss'
 import { useFormData } from '@/app/context/FormDataContext';
 
-export interface IBackButtonProps {
-}
-
-export default function BackButton (props: IBackButtonProps) {
+export default function BackButton () {
   const { setCurrentMask, currentMask } = useFormData()
 
   return (

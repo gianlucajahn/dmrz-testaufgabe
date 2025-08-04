@@ -7,8 +7,6 @@ import TextElement from "../text/TextElement";
 import MaskSelector from "./MaskSelector/MaskSelector";
 import { Mask, useFormData } from "@/app/context/FormDataContext";
 
-export interface ISidebarProps {}
-
 const maskItems: Mask[] = [
   "Rechnungsempfänger",
   "Verordnungsmuster",
@@ -31,7 +29,7 @@ const disabledItems = [
   "Leistungen",
 ];
 
-export default function Sidebar(props: ISidebarProps) {
+export default function Sidebar() {
   const { currentMask, setCurrentMask } = useFormData();
 
   return (
