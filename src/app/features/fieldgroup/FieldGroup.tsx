@@ -6,7 +6,7 @@ import classNames from "classnames";
 export interface IFieldGroupProps {
   headline?: string;
   isReview?: boolean;
-  children: any;
+  children: React.ReactNode[];
 }
 
 export default function FieldGroup(props: IFieldGroupProps) {
