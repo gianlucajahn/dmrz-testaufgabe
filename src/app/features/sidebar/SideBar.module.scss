@@ -24,5 +24,9 @@
         font-size: 12px;
         font-weight: 700;
         background-color: #353a40;
+
+        @media screen and (max-width: 460px) {
+            color: "white";
+        }
     }
 }
